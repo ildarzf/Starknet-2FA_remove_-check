@@ -85,7 +85,7 @@ def main(wallet): #send_graphql_request(address, cursor):
         date_object = datetime.strptime(control_date, "%Y-%m-%d")
 
         if date_object <= dt_datetime:
-            if 'setPublicKey' in selector_identifier or 'change_owner' in selector_identifier or 'remove_signer' in selector_identifier or 'guard' in selector_identifier or 'escape' in selector_identifier:
+            if 'setPublicKey' in selector_identifier or 'change_owner' in selector_identifier or 'remove_signer' in selector_identifier or 'escape' in selector_identifier:
 
                 print(f"{Fore.RED}{address} {date} 'type tx' {selector_identifier}{Style.RESET_ALL}")
             else:
