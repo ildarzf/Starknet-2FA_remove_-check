@@ -11,7 +11,7 @@ def get_proxy_list():
     with open("proxy.txt", "r") as f:
         recipients = [row.strip() for row in f]
     if len(recipients) == 0:
-        cprint("No proxy found in config/proxies.txt", "red")
+        cprint("No proxy found in proxies.txt", "red")
     return recipients
 
 
@@ -29,7 +29,7 @@ def get_random_proxy():
     return proxies
 
 
-def main(wallet): #send_graphql_request(address, cursor):
+def main(wallet):
     cursor = None
     address = wallet
     url = "https://api.starkscancdn.com/graphql"
